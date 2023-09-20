@@ -12,7 +12,7 @@ status of a borrower as either a "healthy loan" or a "high-risk loan".
 y.value_counts() was used. The dataset was then split into train and test sets using the train_test_split module of sklearn.
 * As model 1, LogisticRegression was instantiated from the sklearn.linear_model module. The classification report shows us the following information:
 
-![Model1](Resources/Model 1.PNG)
+![Model1](Resources/Model1.PNG)
 
 
 From the report, we see that precision, recall and f1-score for healthy loans using the LogisticRegression model are all 100%, however, for the high-risk loans, these accuracies
@@ -21,7 +21,7 @@ range from 87% to 89%.
 * As model 2, RandomOverSampler is used to up sample the training data. And using this resampled data, the same LogisticRegression model is instantiated. The following report is
 now generated.
 
-![Model2](Resources/Model 2.PNG)
+![Model2](Resources/Model2.PNG)
 
 Here we see that the precision remained the same, recall improved to 100% and f1-score improved to 93%. 
 
